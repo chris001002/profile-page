@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Navbar from "./navbar";
+import Home from "./Home";
+import Skills from "./Skills";
+import Projects from "./projects";
+import EduAndWork from "./EduAndWork";
+import Contact from "./Contact";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App bg-white dark:bg-gray-800 dark:text-white font-poppins scroll-smooth snap-start">
+			<Navbar />
+			<div className="min-h-screen pt-20 flex justify-center items-center" id="home">
+				<Home />
+			</div>
+			<div className="min-h-screen pt-20 font-poppins snap-start flex justify-center items-center" id="skills">
+				<Skills />
+			</div>
+			<div className="min-h-screen pt-20 font-poppins snap-start flex justify-center items-center flex-col" id="projects">
+				<Projects />
+			</div>
+			<div className="min-h-screen pt-20 font-poppins snap-start flex justify-center items-center flex-col" id="edu&work">
+				<EduAndWork />
+			</div>
+			<div className="min-h-screen pt-20 font-poppins snap-start flex justify-center items-center flex-col" id="contact">
+				<Contact />
+			</div>
+		</div>
+	);
 }
 
 export default App;
