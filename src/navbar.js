@@ -3,10 +3,9 @@ function Navbar() {
 	const [hiddenNav, setNav] = useState(true);
 	const handleNav = () => {
 		setNav(!hiddenNav);
-		console.log(hiddenNav);
 	};
 	return (
-		<header className={"border-double border-b-4 dark:border-gray-500 fixed top-0 w-full z-10 bg-white dark:bg-gray-800".concat(hiddenNav ? " h-20" : "")}>
+		<header className={"border-double border-b-4 dark:border-gray-500 fixed top-0 w-full z-10 bg-slate-50 dark:bg-gray-800".concat(hiddenNav ? " h-20 lg:h-auto" : "")}>
 			<div className="py-4 px-2 lg:mx-4 xl:mx-12">
 				<nav className="flex items-center flex-wrap justify-between">
 					<div className="mt-2 font-bold">Christian</div>
@@ -18,7 +17,7 @@ function Navbar() {
 							</svg>
 						</button>
 					</div>
-					<div id="main-nav" className={"w-full lg:flex items-center lg:w-auto lg:justify-end bg-white dark:bg-gray-800".concat(hiddenNav ? " hidden" : "")}>
+					<div id="main-nav" className={"w-full lg:flex items-center lg:w-auto lg:justify-end dark:bg-gray-800".concat(hiddenNav ? " hidden" : "")}>
 						<div className="text-sm lg:flex-grow mt-2 animated jackinthebox xl:mx-8">
 							<a
 								href="#home"

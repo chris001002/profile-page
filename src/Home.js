@@ -1,5 +1,5 @@
 import React from "react";
-import Profile from "./profileImage.png";
+import Profile from "./images/profileImage.png";
 import {TypeAnimation} from "react-type-animation";
 function Home() {
 	return (

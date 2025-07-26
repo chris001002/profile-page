@@ -31,7 +31,7 @@ const Contact = () => {
 					</a>
 					<a
 						className="flex items-center font-bold 2xl:col-span-2 2xl:justify-center w-full justify-center bg-lime-600 rounded-full drop-shadow-lg p-2 text-xl"
-						href={process.env.PUBLIC_URL + "/raw/CV%20Christian.pdf"}
+						href={process.env.PUBLIC_URL.concat("/raw/CV%20Christian.pdf")}
 					>
 						<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-8 h-8">
 							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -46,7 +46,7 @@ const Contact = () => {
 								></path>
 							</g>
 						</svg>
-						<p className="ml-2">Download CV</p>
+						<p className="ml-2 dark:text-black text-white">Download CV</p>
 					</a>
 				</div>
 			</div>

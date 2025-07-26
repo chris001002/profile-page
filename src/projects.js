@@ -2,9 +2,14 @@ import {Swiper, SwiperSlide} from "swiper/react";
 import {Navigation} from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import React, {useState} from "react";
+import {useState} from "react";
 import "swiper/css/pagination";
-import {useSwiper} from "swiper/react";
+import Project1 from "./images/Project1.png";
+import Project2 from "./images/Project2.png";
+import Project3 from "./images/Project3.png";
+import Project4 from "./images/Project4.png";
+import Project5 from "./images/Project5.png";
+import Project6 from "./images/Project6.png";
 
 function Card({title, subtitle, img, link}) {
 	return (
@@ -16,7 +21,7 @@ function Card({title, subtitle, img, link}) {
 				>
 					<img src={img} className=" animate-fade-in block h-full w-full scale-100 transform object-cover object-center opacity-100 transition duration-300 group-hover:scale-110" alt="" />
 				</a>
-				<div className="absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
+				<div className="absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110 text-left">
 					<h1 className="font-serif text-2xl font-bold text-white shadow-xl">{title}</h1>
 					<h1 className="text-sm font-light text-gray-200 shadow-xl">{subtitle}</h1>
 				</div>
@@ -55,52 +60,37 @@ function Carousel() {
 						autoHeight={true}
 					>
 						<SwiperSlide>
+							<Card title={"TempChat"} subtitle={"Using Laravel, Next.js, Docker"} img={Project1} link={"https://github.com/chris001002/TempChat"} />
+						</SwiperSlide>
+						<SwiperSlide>
 							<Card
-								title={"Project 1"}
-								subtitle={"Project 1 Description"}
-								img={"https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"}
-								link={"https://www.google.com"}
+								title={"Defect detection and Root cause analysis"}
+								subtitle={"Using Mask R-CNN, YOLO and Machine Learning"}
+								img={Project2}
+								link={"https://github.com/chris001002/Defect-Detection-and-Root-Cause-Analysis"}
+							/>
+						</SwiperSlide>
+						<SwiperSlide>
+							<Card title={"Glass Ordering Application"} subtitle={"Using tailwindcss, mysql and php"} img={Project3} link={"https://glassordering.free.nf"} />
+						</SwiperSlide>
+						<SwiperSlide>
+							<Card
+								title={"Covid Question Answering Chatbot"}
+								subtitle={"Using transformers and vector indexing with angular embedding"}
+								img={Project4}
+								link={"https://github.com/chris001002/COVID-19-Question-Answering-Chatbot"}
 							/>
 						</SwiperSlide>
 						<SwiperSlide>
 							<Card
-								title={"Project 1"}
-								subtitle={"Project 1 Description"}
-								img={"https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"}
-								link={"https://www.google.com"}
+								title={"Whatsapp Clone"}
+								subtitle={"A simple android app replicating whatsapp using Java and firebase"}
+								img={Project5}
+								link={"https://github.com/chris001002/Whatsapp-clone"}
 							/>
 						</SwiperSlide>
 						<SwiperSlide>
-							<Card
-								title={"Project 1"}
-								subtitle={"Project 1 Description"}
-								img={"https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"}
-								link={"#"}
-							/>
-						</SwiperSlide>
-						<SwiperSlide>
-							<Card
-								title={"Project 1"}
-								subtitle={"Project 1 Description"}
-								img={"https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"}
-								link={"#"}
-							/>
-						</SwiperSlide>
-						<SwiperSlide>
-							<Card
-								title={"Project 1"}
-								subtitle={"Project 1 Description"}
-								img={"https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"}
-								link={"#"}
-							/>
-						</SwiperSlide>
-						<SwiperSlide>
-							<Card
-								title={"Project 1"}
-								subtitle={"Project 1 Description"}
-								img={"https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"}
-								link={"#"}
-							/>
+							<Card title={"Nutrical"} subtitle={"App tracking nutritions using Flutter and Firebase"} img={Project6} link={"https://github.com/chris001002/nutrical"} />
 						</SwiperSlide>
 					</Swiper>
 				</div>

@@ -8,9 +8,9 @@ import Contact from "./Contact";
 
 function App() {
 	return (
-		<div className="App bg-white dark:bg-gray-800 dark:text-white font-poppins scroll-smooth snap-start">
+		<div className="App bg-white dark:bg-gray-800 dark:text-white font-poppins scroll-smooth">
 			<Navbar />
-			<div className="min-h-screen pt-20 flex justify-center items-center" id="home">
+			<div className="min-h-screen pt-20 flex justify-center items-center snap-start" id="home">
 				<Home />
 			</div>
 			<div className="min-h-screen pt-20 font-poppins snap-start flex justify-center items-center" id="skills">
