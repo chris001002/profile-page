@@ -1,7 +1,7 @@
 {
 	"name": "myapp",
 	"version": "0.1.0",
-	"homepage": "https://chris001002.github.io/profile-page",
+	"homepage": "http://codewithchris.my.id",
 	"private": true,
 	"dependencies": {
 		"@testing-library/dom": "^10.4.0",
