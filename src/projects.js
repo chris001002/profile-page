@@ -11,6 +11,7 @@ import Project4 from "./images/Project4.png";
 import Project5 from "./images/Project5.png";
 import Project6 from "./images/Project6.png";
 import Project7 from "./images/Project7.png";
+import Project8 from "./images/Project8.png";
 import {createPortal} from "react-dom";
 const allImages = {
 	project_1: require.context("./images/project_1", true, /\.(png|jpe?g|gif)$/),
@@ -20,6 +21,7 @@ const allImages = {
 	project_5: require.context("./images/project_5", true, /\.(png|jpe?g|gif)$/),
 	project_6: require.context("./images/project_6", true, /\.(png|jpe?g|gif)$/),
 	project_7: require.context("./images/project_7", true, /\.(png|jpe?g|gif)$/),
+	project_8: require.context("./images/project_8", true, /\.(png|jpe?g|gif)$/),
 };
 class Project {
 	constructor(title, subtitle, img, imageContexts = null, repoLink = null, webLink = null) {
@@ -33,6 +35,12 @@ class Project {
 }
 
 let projects = [
+	new Project(
+		"SmartChurch Chatbot",
+		"LangGraph Text-to-SQL agent with Django REST + React and PostgreSQL, auto-generating Seaborn visual reports from natural language",
+		Project8,
+		allImages.project_8
+	),
 	new Project("PUIS Mobile", "A simple mobile app to view student information using React Native and Expo", Project7, allImages.project_7),
 	new Project(
 		"Defect detection and Root cause analysis",

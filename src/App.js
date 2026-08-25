@@ -45,7 +45,7 @@ function App() {
 			<div data-animate="slide-up" className="min-h-screen pt-20 font-poppins snap-start flex justify-center items-center flex-col opacity-0" id="projects">
 				<Projects />
 			</div>
-			<div data-animate="slide-up" className="min-h-screen pt-20 font-poppins snap-start flex justify-center items-center flex-col opacity-0" id="edu&work">
+			<div data-animate="slide-up" className="min-h-screen pt-24 md:pt-28 pb-8 md:pb-10 font-poppins snap-start flex justify-center items-center flex-col opacity-0" id="edu&work">
 				<EduAndWork />
 			</div>
 			<div data-animate="slide-up" className="min-h-screen pt-20 font-poppins snap-start flex justify-center items-center flex-col opacity-0" id="contact">
