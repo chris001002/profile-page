@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.405764b0.css",
-    "main.js": "/static/js/main.fbe291ff.js",
+    "main.css": "/static/css/main.0f2e2fc0.css",
+    "main.js": "/static/js/main.ee79d3e0.js",
     "static/js/453.68d2f560.chunk.js": "/static/js/453.68d2f560.chunk.js",
     "static/media/1.png": "/static/media/1.6e2beea8829481cd3c4f.png",
     "static/media/10.png": "/static/media/10.7f5c0a2301d9c615d499.png",
@@ -15,17 +15,18 @@
     "static/media/3.png": "/static/media/3.b91596f6e8fa3753b5ec.png",
     "static/media/Project3.png": "/static/media/Project3.476da6fb3a149ba37c21.png",
     "static/media/7.png": "/static/media/7.2bc02c9a38a776eed168.png",
+    "static/media/5.png": "/static/media/5.faa8dfe055a6b53fd97a.png",
     "static/media/4.png": "/static/media/4.0bc65355be9dcb73c5db.png",
     "static/media/4.jpg": "/static/media/4.c49a2b81a9c3205bfe58.jpg",
     "static/media/15.png": "/static/media/15.e7e2a40d993f7d8b5a5f.png",
     "static/media/profileImage.png": "/static/media/profileImage.16de324ef48618047541.png",
+    "static/media/Project8.png": "/static/media/Project8.e8871f77198a0761c70c.png",
     "static/media/5.jpg": "/static/media/5.c270e0f9ede39af70149.jpg",
     "static/media/17.png": "/static/media/17.151c433de456cd5edf62.png",
     "static/media/1.jpg": "/static/media/1.5f98a5a2e87592bd570a.jpg",
     "static/media/2.jpg": "/static/media/2.65f63388adbed7cabdcf.jpg",
     "static/media/6.jpg": "/static/media/6.8c538a9b6221f09874f6.jpg",
     "static/media/Project2.png": "/static/media/Project2.f8464404a1a815dfea80.png",
-    "static/media/5.png": "/static/media/5.faa8dfe055a6b53fd97a.png",
     "static/media/Project4.png": "/static/media/Project4.9b68c07eee79eedb2dab.png",
     "static/media/18.png": "/static/media/18.eee62c9bd7f598dbcca7.png",
     "static/media/9.png": "/static/media/9.266072821f07a404f3c2.png",
@@ -36,12 +37,12 @@
     "static/media/Project1.png": "/static/media/Project1.464b4fba6c95c6434f8e.png",
     "static/media/Project5.png": "/static/media/Project5.208edf05d51e2ef25b72.png",
     "index.html": "/index.html",
-    "main.405764b0.css.map": "/static/css/main.405764b0.css.map",
-    "main.fbe291ff.js.map": "/static/js/main.fbe291ff.js.map",
+    "main.0f2e2fc0.css.map": "/static/css/main.0f2e2fc0.css.map",
+    "main.ee79d3e0.js.map": "/static/js/main.ee79d3e0.js.map",
     "453.68d2f560.chunk.js.map": "/static/js/453.68d2f560.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.405764b0.css",
-    "static/js/main.fbe291ff.js"
+    "static/css/main.0f2e2fc0.css",
+    "static/js/main.ee79d3e0.js"
   ]
 }
