@@ -23,7 +23,7 @@ const EduAndWork = () => {
 						<p className="text-xl text-red-800 dark:text-gray-300 font-normal text-left">Dec 2025 - May 2026</p>
 						<p className="text-2xl font-bold text-left">Kalbe International — Jakarta Timur</p>
 						<p className="text-xl font-normal text-left">Full Stack Developer — <b className="font-bold">Intern</b></p>
-						<p className="text-base font-normal text-black/70 dark:text-gray-300 mt-2 leading-relaxed text-left">Optimized MySQL dashboards to cut load time by 50% and integrated NetSuite SOAP APIs to centralize sales data, with Python automation for 1,000+ records.</p>
+						<p className="text-base font-normal text-black/70 dark:text-gray-300 mt-2 leading-relaxed text-left">Optimized MySQL via batching to cut data upload time by 50% (3 → 1.5 min) and integrated NetSuite SOAP APIs to centralize sales data, with Python automation for 1,000+ records.</p>
 					</div>
 					<div className="border-solid border-l-4 border-amber-300 dark:border-gray-500 mt-4 ml-2 pl-3 text-left">
 						<p className="text-xl text-red-800 dark:text-gray-300 font-normal text-left">Aug 2025 - Dec 2025</p>
@@ -35,7 +35,7 @@ const EduAndWork = () => {
 						<p className="text-xl text-red-800 dark:text-gray-300 font-normal text-left">Sep 2025 - Dec 2025</p>
 						<p className="text-2xl font-bold text-left">President University — Bekasi</p>
 						<p className="text-xl font-normal text-left">Programming Concept Lab Assistant — <b className="font-bold">Part-Time</b></p>
-						<p className="text-base font-normal text-black/70 dark:text-gray-300 mt-2 leading-relaxed text-left">Mentored 40+ freshmen in programming fundamentals and data structures, graded 3 cohorts, and created hands-on lab exercises.</p>
+						<p className="text-base font-normal text-black/70 dark:text-gray-300 mt-2 leading-relaxed text-left">Mentored 40+ freshmen in programming fundamentals and data structures, graded mid-exams for 3 classes, and created hands-on lab exercises.</p>
 					</div>
 				</div>
 			</div>
