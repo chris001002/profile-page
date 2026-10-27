@@ -126,14 +126,7 @@ const Contact = () => {
 								></path>
 							</g>
 						</svg>
-						<p className="ml-2 dark:text-black text-white">Download CV (1 page, PDF)</p>
-					</a>
-					<a className="flex items-center font-bold 2xl:col-span-2 2xl:justify-center w-full justify-center" href="https://github.com/chris001002/profile-page">
-						<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="size-6">
-							<path d="M8 6L2 12L8 18" stroke="#f97316" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-							<path d="M16 6L22 12L16 18" stroke="#f97316" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-						</svg>
-						<p className="ml-2">Source code</p>
+						<p className="ml-2 dark:text-black text-white">Download CV</p>
 					</a>
 				</div>
 			</div>
