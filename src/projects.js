@@ -24,37 +24,50 @@ const allImages = {
 	project_8: require.context("./images/project_8", true, /\.(png|jpe?g|gif)$/),
 };
 class Project {
-	constructor(title, subtitle, img, imageContexts = null, repoLink = null, webLink = null) {
+	constructor(title, subtitle, img, imageContexts = null, repoLink = null, webLink = null, featured = false) {
 		this.title = title;
 		this.subtitle = subtitle;
 		this.img = img;
 		this.imageContexts = imageContexts;
 		this.repoLink = repoLink;
 		this.webLink = webLink;
+		this.featured = featured;
 	}
 }
 
 let projects = [
 	new Project(
 		"SmartChurch Chatbot",
-		"LangGraph Text-to-SQL agent with Django REST + React and PostgreSQL, auto-generating Seaborn visual reports from natural language",
+		"LangGraph Text-to-SQL agent over PostgreSQL with allow-listed query generation, behind a Django REST + React interface that draws the answer as a Seaborn report",
 		Project8,
-		allImages.project_8
+		allImages.project_8,
+		null,
+		null,
+		true
 	),
-	new Project("PUIS Mobile", "A simple mobile app to view student information using React Native and Expo", Project7, allImages.project_7),
+	new Project(
+		"PUIS Mobile",
+		"Student app unifying GPA, payments and schedules, with a LangGraph design-thinking agent over a MongoDB vector store",
+		Project7,
+		allImages.project_7,
+		null,
+		null,
+		true
+	),
 	new Project(
 		"Defect detection and Root cause analysis",
-		"Using Mask R-CNN, YOLO and Machine Learning",
+		"Mask R-CNN beat YOLO ~2× on toy-car defect segmentation (45.16 vs 22.86 AP50:95) with classifiers that map defects to root causes",
 		Project2,
 		allImages.project_2,
 		"https://github.com/chris001002/Defect-Detection-and-Root-Cause-Analysis",
-		null
+		null,
+		true
 	),
-	new Project("Nutrical", "App tracking nutritions using Flutter and Firebase", Project6, allImages.project_6, "https://github.com/chris001002/nutrical", null),
-	new Project("TempChat", "Using Laravel, Next.js, Docker", Project1, allImages.project_1, "https://github.com/chris001002/TempChat", null),
+	new Project("Nutrical", "LLM-powered nutrition tracker (Gemini API) built with Flutter and Firebase", Project6, allImages.project_6, "https://github.com/chris001002/nutrical", null),
+	new Project("TempChat", "Chat app with a Laravel API, Next.js frontend and Docker Compose deployment", Project1, allImages.project_1, "https://github.com/chris001002/TempChat", null),
 	new Project(
 		"Covid Question Answering Chatbot",
-		"Using transformers and vector indexing with angular embedding",
+		"SciBERT and RoBERTa fine-tuning for COVID-19 question answering over a vector index",
 		Project4,
 		allImages.project_4,
 		"https://github.com/chris001002/COVID-19-Question-Answering-Chatbot",
@@ -66,7 +79,7 @@ let projects = [
 		Project3,
 		allImages.project_3,
 		"https://github.com/chris001002/Glass-Ordering-Application",
-		"https://glassordering.free.nf"
+		null
 	),
 	new Project(
 		"Whatsapp Clone",
@@ -95,7 +108,7 @@ function Card({project, showModal, setProject}) {
 					/>
 				</button>
 				<div className="absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110 text-left">
-					<h1 className="font-serif text-2xl font-bold text-white shadow-xl">{project.title}</h1>
+					<h1 className={`font-serif font-bold text-white shadow-xl ${project.featured ? "text-2xl" : "text-lg"}`}>{project.title}</h1>
 					<h1 className="text-sm font-light text-gray-200 shadow-xl">{project.subtitle}</h1>
 				</div>
 			</div>
