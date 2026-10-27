@@ -14,9 +14,9 @@ function Home() {
 	return (
 		<div className="flex lg:flex-row flex-col items-center h-full w-full">
 			<div className="flex flex-col justify-center w-full lg:w-1/2 px-5 md:px-16 py-8 text-left">
-				<h1 className="font-bold text-6xl leading-tight">
+				<h1 className="font-bold text-4xl lg:text-5xl 2xl:text-6xl leading-tight">
 					<span className="block text-orange-500">Christian</span>{" "}
-					<span className="block">Full-Stack Engineer</span>
+					<span className="block whitespace-nowrap">Full-Stack Engineer</span>
 				</h1>
 				<h2 className="text-2xl font-semibold mt-3 text-black/70 dark:text-gray-300">{STACK}</h2>
 				<p className="text-lg mt-5 leading-relaxed max-w-xl">{SUMMARY}</p>
